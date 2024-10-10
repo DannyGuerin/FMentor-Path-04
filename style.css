@@ -1,0 +1,58 @@
+:root {
+  /* Color presets */
+  --color-rose-800: #7A284E;
+  --color-rose-50: #FFF7FB;
+  --color-white: #FFFFFF;
+  --color-stone-900: #312E2C;
+  --color-stone-600: #5F564D;
+  --color-stone-150: #E3DDD7;
+  --color-stone-100: #F3E5D7;
+  --color-brown-800: #854632;
+
+  /* Text Presets */
+  --text-preset1-font-family: "Young Serif", serif;
+  --text-preset1-font-weight: 400;
+  --text-preset1-font-size: 2.5rem;
+  --text-preset1-line-height: 100%;
+  --text-preset1-color: #312E2C;
+  --text-preset1-font-style: normal;
+
+  --text-preset2-font-family: "Young Serif", serif;
+  --text-preset2-font-weight: 400;
+  --text-preset2-font-size: 1.75rem;
+  --text-preset2-line-height: 100%;
+  --text-preset2-color: #312E2C;
+  --text-preset2-font-style: normal;
+
+  --text-preset3-font-family: "Outfit", sans-serif;
+  --text-preset3-font-weight: 600;
+  --text-preset3-font-size: 1.25rem;
+  --text-preset3-line-height: 100%;
+  --text-preset3-color: #312E2C;
+  --text-preset3-font-style: normal;
+
+  --text-preset4-font-family: "Outfit", sans-serif;
+  --text-preset4-font-weight: 400;
+  --text-preset4-font-size: 1.0rem;
+  --text-preset4-line-height: 150%;
+  --text-preset4-color: #312E2C;
+  --text-preset4-font-style: normal;
+
+  --text-preset4-bold-font-family: "Outfit", sans-serif;
+  --text-preset4-bold-font-weight: 700;
+  --text-preset4-bold-font-size: 1.0rem;
+  --text-preset4-bold-line-height: 150%;
+  --text-preset4-bold-color: #312E2C;
+  --text-preset4-bold-font-style: normal;
+
+  /* Spacing presets */
+  --space-1600: 8.0rem;
+  --space-600: 3.0rem;
+  --space-500: 2.5rem;
+  --space-400: 2.0rem;
+  --space-300: 1.5rem;
+  --space-200: 1.0rem;
+  --space-150: 0.75rem;
+  --space-100: 0.5rem;
+
+}
