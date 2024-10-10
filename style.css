@@ -56,3 +56,111 @@
   --space-100: 0.5rem;
 
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-stone-100);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-1600, 8rem) var(--spacing-600, 3rem);
+}
+
+ul, ol {
+  color: var(--color-rose-800);
+  font-family: var(--text-preset4-bold-font-family);
+  font-size: var(--text-preset4-bold-font-size);
+  font-style: var(--text-preset4-font-style);
+  font-weight: var(--text-preset4-bold-font-weight);
+  line-height: var(--text-preset4-bold-line-height);
+}
+
+span {
+  font-size: var(--text-preset4-font-family);
+  font-style: var(--text-preset4-font-style);
+  font-weight: var(--text-preset4-font-weight);
+  line-height: var(--text-preset4-line-height);
+  color: var(--color-stone-600);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--color-stone-600);
+}
+
+/* Set all images to be responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#recipe-wrap {
+  display: flex;
+  max-width: 46rem;
+  padding: var(--space-500);
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 1.5rem;
+  background-color: var(--color-white);
+  font-family: var(--text-preset4-font-family);
+  font-style: var(--text-preset4-font-style);
+  font-weight: var(--text-preset4-font-weight);
+  line-height: var(--text-preset4-line-height);
+}
+
+#content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+img {
+  border-radius: 0.75rem;
+  height: 18.75rem;
+  align-self: stretch;
+  margin-bottom: var(--space-500);
+}
+
+#title {
+  color: var(--color-stone-900);
+  font-family: var(--text-preset1-font-family);
+  font-size: var(--text-preset1-font-size);
+  font-style: var(--text-preset1-font-style);
+  font-weight: var(--text-preset1-font-weight);
+  line-height: var(--text-preset1-line-height);
+  align-self: stretch;
+  margin-top: 0px;
+  margin-bottom: var(--space-300);
+}
+
+#intro-text {
+  margin-top: 0px;
+  font-weight: 400;
+  color: var(--color-stone-600);
+  align-self: stretch;
+  font-size: 1.1rem;
+}
+
+#prep-title {
+  color: var(--color-rose-800);
+  font-size: var(--text-preset3-font-size);
+  font-style: var(--text-preset3-font-style);
+  font-weight: var(--text-preset3-font-weight);
+  line-height: var(--text-preset3-line-height);
+  margin: 0px;
+}
+
+#prep-time {
+  background-color: var(--color-rose-50);
+  border-radius: 0.75rem;
+  padding: var(--space-300);
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
