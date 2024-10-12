@@ -123,24 +123,23 @@ ol {
 
 img {
   width: 100%;
-  height: auto; /* Ensure the height adjusts proportionally */
-  object-fit: cover; /* Covers the container without distortion */
-  border-radius: 0; /* Remove rounded corners */
-  margin-bottom: var(--space-300); /* Smaller margin below the image */
+  height: auto;
+  border-radius: 0.75 !important;
+  margin-bottom: var(--space-300);
 }
 
 
 #title {
   color: var(--color-stone-900);
   font-family: var(--text-preset1-font-family);
-  font-size: calc(var(--text-preset1-font-size) - 0.25rem); /* Slightly reduce font size for better fit */
+  font-size: calc(var(--text-preset1-font-size) - 0.25rem);
   font-style: var(--text-preset1-font-style);
   font-weight: var(--text-preset1-font-weight);
   line-height: var(--text-preset1-line-height);
   margin-top: 0px;
   margin-bottom: var(--space-300);
-  max-width: 100%; /* Ensure it uses full width */
-  white-space: normal; /* Allow wrapping on two lines */
+  max-width: 100%;
+  white-space: normal;
 }
 
 #intro-text {
@@ -192,8 +191,8 @@ img {
 }
 
 .prep-time li::marker {
-  content: "•"; /* Customize bullet if needed */
-  font-size: 18px; /* Adjust bullet size */
+  content: "•";
+  font-size: 18px;
   color: var(--color-rose-800);
 }
 
@@ -203,8 +202,8 @@ img {
 }
 
 .ingredients li::marker {
-  content: "•"; /* Customize bullet if needed */
-  font-size: 18px; /* Adjust bullet size */
+  content: "•";
+  font-size: 18px;
   color: var(--color-brown-800);
 }
 
@@ -280,20 +279,17 @@ td {
 
 
 /* Tablet Styles*/
-@media (max-width: 38.5rem) { /* Tablet screens, about 616px */
+@media (max-width: 38.5rem) {
   #recipe-wrap {
-    padding: var(--space-300); /* Adjust padding */
-    width: 100%; /* Set width to 100% for better fit */
+    padding: var(--space-300);
+    width: 100%;
   }
 
   img {
-    height: auto; /* Ensure the image adjusts */
-    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    max-width: 100%;
   }
-
-  /* Add any other styles to fit tablet layout */
 }
-
 /* Mobile Styles */
 
 @media (max-width: 23.4rem) {
@@ -306,22 +302,22 @@ td {
   }
 
   #content-wrap {
-    padding: 0; /* Remove padding to avoid any restrictions */
+    padding: 0;
   }
 
   img {
-    width: 100%; /* Take up the full width */
-    height: auto; /* Adjust height proportionally */
-    object-fit: cover; /* Cover the space */
-    border-radius: 0; /* Remove any rounding on the image */
-    margin: 0; /* Remove any margin */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
   }
 
   #title {
-    font-size: calc(var(--text-preset1-font-size) - 0.75rem); /* Further reduce font size */
-    line-height: 1.1; /* Adjust line height */
+    font-size: calc(var(--text-preset1-font-size) - 0.6rem);
+    line-height: 1.2;
     white-space: normal;
-    max-width: 100%; /* Ensure it takes up the available width */
-    margin-bottom: var(--space-200); /* Adjust margin as needed */
+    max-width: 100%;
+    margin-bottom: var(--space-300);
   }
 }
