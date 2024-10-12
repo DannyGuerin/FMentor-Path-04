@@ -67,6 +67,16 @@ body {
   padding: var(--spacing-1600, 8rem) var(--spacing-600, 3rem);
 }
 
+main {
+  width: 100%; /* Ensures the main element takes up full width on all devices */
+  display: flex;
+  justify-content: center; /* Centers the content */
+  padding: 0; /* Remove any default padding */
+  margin: 0; /* Remove any default margin */
+  box-sizing: border-box; /* Ensures padding and borders are included in width calculation */
+}
+
+
 span {
   font-size: var(--text-preset4-font-family);
   font-style: var(--text-preset4-font-style);
@@ -112,24 +122,25 @@ ol {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0.75rem;
-  height: 18.75rem;
-  align-self: stretch;
-  margin-bottom: var(--space-500);
+  width: 100%;
+  height: auto; /* Ensure the height adjusts proportionally */
+  object-fit: cover; /* Covers the container without distortion */
+  border-radius: 0; /* Remove rounded corners */
+  margin-bottom: var(--space-300); /* Smaller margin below the image */
 }
+
 
 #title {
   color: var(--color-stone-900);
   font-family: var(--text-preset1-font-family);
-  font-size: var(--text-preset1-font-size);
+  font-size: calc(var(--text-preset1-font-size) - 0.25rem); /* Slightly reduce font size for better fit */
   font-style: var(--text-preset1-font-style);
   font-weight: var(--text-preset1-font-weight);
   line-height: var(--text-preset1-line-height);
   margin-top: 0px;
   margin-bottom: var(--space-300);
+  max-width: 100%; /* Ensure it uses full width */
+  white-space: normal; /* Allow wrapping on two lines */
 }
 
 #intro-text {
@@ -265,4 +276,52 @@ td {
 .nutrition-table .value {
   text-align: left;
   padding-right: 1rem;
+}
+
+
+/* Tablet Styles*/
+@media (max-width: 38.5rem) { /* Tablet screens, about 616px */
+  #recipe-wrap {
+    padding: var(--space-300); /* Adjust padding */
+    width: 100%; /* Set width to 100% for better fit */
+  }
+
+  img {
+    height: auto; /* Ensure the image adjusts */
+    max-width: 100%; /* Ensure the image fits within the container */
+  }
+
+  /* Add any other styles to fit tablet layout */
+}
+
+/* Mobile Styles */
+
+@media (max-width: 23.4rem) {
+  #recipe-wrap {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    flex-basis: 100%;
+  }
+
+  #content-wrap {
+    padding: 0; /* Remove padding to avoid any restrictions */
+  }
+
+  img {
+    width: 100%; /* Take up the full width */
+    height: auto; /* Adjust height proportionally */
+    object-fit: cover; /* Cover the space */
+    border-radius: 0; /* Remove any rounding on the image */
+    margin: 0; /* Remove any margin */
+  }
+
+  #title {
+    font-size: calc(var(--text-preset1-font-size) - 0.75rem); /* Further reduce font size */
+    line-height: 1.1; /* Adjust line height */
+    white-space: normal;
+    max-width: 100%; /* Ensure it takes up the available width */
+    margin-bottom: var(--space-200); /* Adjust margin as needed */
+  }
 }
